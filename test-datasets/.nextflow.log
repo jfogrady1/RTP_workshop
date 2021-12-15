@@ -1,0 +1,35 @@
+Dec-15 10:41:37.889 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ../test.nf
+Dec-15 10:41:37.944 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
+Dec-15 10:41:37.959 [main] INFO  nextflow.cli.CmdRun - Launching `../test.nf` [deadly_goodall] - revision: 9a2dec3ff1
+Dec-15 10:41:38.006 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/jfogrady1/.nextflow/plugins
+Dec-15 10:41:38.007 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-15 10:41:38.008 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Dec-15 10:41:38.014 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-15 10:41:38.014 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-15 10:41:38.017 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Dec-15 10:41:38.024 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-15 10:41:38.059 [main] DEBUG nextflow.Session - Session uuid: 90ae805e-8aee-45f4-92eb-3265f589f93b
+Dec-15 10:41:38.059 [main] DEBUG nextflow.Session - Run name: deadly_goodall
+Dec-15 10:41:38.061 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-15 10:41:38.085 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.1 build 5556
+  Created: 14-05-2021 15:20 UTC (16:20 IST)
+  System: Linux 5.10.16.3-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.7 on OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 549@NUIG-7PJW2B3 [127.0.1.1]
+  CPUs: 8 - Mem: 24.9 GB (22.1 GB) - Swap: 7 GB (7 GB)
+Dec-15 10:41:38.103 [main] DEBUG nextflow.Session - Work-dir: /home/jfogrady1/test/test-datasets/work [ext2/ext3]
+Dec-15 10:41:38.104 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jfogrady1/test/bin
+Dec-15 10:41:38.111 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-15 10:41:38.123 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-15 10:41:38.217 [main] DEBUG nextflow.Session - Session start invoked
+Dec-15 10:41:38.611 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-15 10:41:38.622 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Dec-15 10:41:38.733 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Dec-15 10:41:38.733 [main] DEBUG nextflow.Session - Session await
+Dec-15 10:41:38.733 [main] DEBUG nextflow.Session - Session await > all process finished
+Dec-15 10:41:38.733 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-15 10:41:38.743 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Dec-15 10:41:38.831 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Dec-15 10:41:38.844 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

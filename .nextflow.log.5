@@ -1,0 +1,85 @@
+Dec-15 11:02:50.265 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf -with-singularity test.img -c nextflow.config
+Dec-15 11:02:50.358 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
+Dec-15 11:02:50.378 [main] INFO  nextflow.cli.CmdRun - Launching `test.nf` [gloomy_perlman] - revision: a2514564cd
+Dec-15 11:02:50.392 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/jfogrady1/test/nextflow.config
+Dec-15 11:02:50.395 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/jfogrady1/test/nextflow.config
+Dec-15 11:02:50.395 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jfogrady1/test/nextflow.config
+Dec-15 11:02:50.395 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jfogrady1/test/nextflow.config
+Dec-15 11:02:50.416 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-15 11:02:50.808 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-15 11:02:50.821 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Singularity container as requested by cli option `-with-singularity null`
+Dec-15 11:02:50.831 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/jfogrady1/.nextflow/plugins
+Dec-15 11:02:50.832 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-15 11:02:50.833 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Dec-15 11:02:50.840 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-15 11:02:50.841 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-15 11:02:50.844 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Dec-15 11:02:50.851 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-15 11:02:50.885 [main] DEBUG nextflow.Session - Session uuid: 77ab6811-42be-4ed0-99a9-ce067bac0c2b
+Dec-15 11:02:50.885 [main] DEBUG nextflow.Session - Run name: gloomy_perlman
+Dec-15 11:02:50.886 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-15 11:02:50.908 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.1 build 5556
+  Created: 14-05-2021 15:20 UTC (16:20 IST)
+  System: Linux 5.10.16.3-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.7 on OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2236@NUIG-7PJW2B3 [127.0.1.1]
+  CPUs: 8 - Mem: 24.9 GB (22 GB) - Swap: 7 GB (7 GB)
+Dec-15 11:02:50.922 [main] DEBUG nextflow.Session - Work-dir: /home/jfogrady1/test/work [ext2/ext3]
+Dec-15 11:02:50.922 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jfogrady1/test/bin
+Dec-15 11:02:50.931 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-15 11:02:50.940 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-15 11:02:51.029 [main] DEBUG nextflow.Session - Session start invoked
+Dec-15 11:02:51.258 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-15 11:02:51.267 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: FASTQC
+Dec-15 11:02:51.302 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test-datasets/fastq/; pattern: *_{1,2}.fastq.gz; options: [checkIfExists:true]
+Dec-15 11:02:51.443 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-15 11:02:51.443 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-15 11:02:51.447 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-15 11:02:51.450 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=24.9 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Dec-15 11:02:51.502 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Dec-15 11:02:51.502 [main] DEBUG nextflow.Session - Session await
+Dec-15 11:02:51.689 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:02:51.693 [Task submitter] INFO  nextflow.Session - [78/b67a33] Submitted process > FASTQC (3)
+Dec-15 11:02:51.702 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:02:51.703 [Task submitter] INFO  nextflow.Session - [01/bc43ce] Submitted process > FASTQC (1)
+Dec-15 11:02:51.710 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:02:51.711 [Task submitter] INFO  nextflow.Session - [ca/503014] Submitted process > FASTQC (4)
+Dec-15 11:02:51.719 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:02:51.719 [Task submitter] INFO  nextflow.Session - [3c/6d3069] Submitted process > FASTQC (2)
+Dec-15 11:02:51.723 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:02:51.723 [Task submitter] INFO  nextflow.Session - [04/a2231d] Submitted process > FASTQC (5)
+Dec-15 11:02:51.728 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:02:51.729 [Task submitter] INFO  nextflow.Session - [18/1ffcc4] Submitted process > FASTQC (6)
+Dec-15 11:02:51.992 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: FASTQC (3); status: COMPLETED; exit: 255; error: -; workDir: /home/jfogrady1/test/work/78/b67a33f16027832ae5c6321ad750d8]
+Dec-15 11:02:52.015 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FASTQC (3)'
+
+Caused by:
+  Process `FASTQC (3)` terminated with an error exit status (255)
+
+Command executed:
+
+  fastqc -q N2_rep1_1.fastq.gz N2_rep1_2.fastq.gz
+
+Command exit status:
+  255
+
+Command output:
+  (empty)
+
+Command error:
+  WARNING: skipping mount of /home/jfogrady1/jfogrady1/test: stat /home/jfogrady1/jfogrady1/test: no such file or directory
+  FATAL:   container creation failed: mount /home/jfogrady1/jfogrady1/test->/home/jfogrady1/jfogrady1/test error: while mounting /home/jfogrady1/jfogrady1/test: mount source /home/jfogrady1/jfogrady1/test doesn't exist
+
+Work dir:
+  /home/jfogrady1/test/work/78/b67a33f16027832ae5c6321ad750d8
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Dec-15 11:02:52.023 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `FASTQC (3)` terminated with an error exit status (255)
+Dec-15 11:02:52.035 [main] DEBUG nextflow.Session - Session await > all process finished
+Dec-15 11:02:52.036 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-15 11:02:52.041 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (5)
+Dec-15 11:02:52.061 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=5; succeedDuration=0ms; failedDuration=231ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
+Dec-15 11:02:52.227 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Dec-15 11:02:52.236 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

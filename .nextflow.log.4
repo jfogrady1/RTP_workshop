@@ -1,0 +1,66 @@
+Dec-15 11:04:49.416 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf -with-singularity test.img -c nextflow.config
+Dec-15 11:04:49.490 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.1
+Dec-15 11:04:49.506 [main] INFO  nextflow.cli.CmdRun - Launching `test.nf` [drunk_caravaggio] - revision: a2514564cd
+Dec-15 11:04:49.517 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/jfogrady1/test/nextflow.config
+Dec-15 11:04:49.518 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/jfogrady1/test/nextflow.config
+Dec-15 11:04:49.519 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jfogrady1/test/nextflow.config
+Dec-15 11:04:49.519 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jfogrady1/test/nextflow.config
+Dec-15 11:04:49.539 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-15 11:04:49.945 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Dec-15 11:04:49.957 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Singularity container as requested by cli option `-with-singularity null`
+Dec-15 11:04:49.965 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/jfogrady1/.nextflow/plugins
+Dec-15 11:04:49.966 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-15 11:04:49.968 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Dec-15 11:04:49.973 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-15 11:04:49.974 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-15 11:04:49.976 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Dec-15 11:04:49.982 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-15 11:04:50.015 [main] DEBUG nextflow.Session - Session uuid: a21a2c2c-4990-4c41-94ed-495c5920121c
+Dec-15 11:04:50.015 [main] DEBUG nextflow.Session - Run name: drunk_caravaggio
+Dec-15 11:04:50.016 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-15 11:04:50.038 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.1 build 5556
+  Created: 14-05-2021 15:20 UTC (16:20 IST)
+  System: Linux 5.10.16.3-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.7 on OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2693@NUIG-7PJW2B3 [127.0.1.1]
+  CPUs: 8 - Mem: 24.9 GB (22 GB) - Swap: 7 GB (7 GB)
+Dec-15 11:04:50.053 [main] DEBUG nextflow.Session - Work-dir: /home/jfogrady1/test/work [ext2/ext3]
+Dec-15 11:04:50.053 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jfogrady1/test/bin
+Dec-15 11:04:50.061 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-15 11:04:50.070 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-15 11:04:50.160 [main] DEBUG nextflow.Session - Session start invoked
+Dec-15 11:04:50.437 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-15 11:04:50.444 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: FASTQC
+Dec-15 11:04:50.478 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test-datasets/fastq/; pattern: *_{1,2}.fastq.gz; options: [checkIfExists:true]
+Dec-15 11:04:50.580 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-15 11:04:50.580 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-15 11:04:50.584 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-15 11:04:50.587 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=24.9 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Dec-15 11:04:50.640 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Dec-15 11:04:50.640 [main] DEBUG nextflow.Session - Session await
+Dec-15 11:04:50.845 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:04:50.848 [Task submitter] INFO  nextflow.Session - [6e/ab7d0e] Submitted process > FASTQC (1)
+Dec-15 11:04:50.856 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:04:50.856 [Task submitter] INFO  nextflow.Session - [d9/5e451b] Submitted process > FASTQC (6)
+Dec-15 11:04:50.867 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:04:50.867 [Task submitter] INFO  nextflow.Session - [14/0afedf] Submitted process > FASTQC (5)
+Dec-15 11:04:50.873 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:04:50.874 [Task submitter] INFO  nextflow.Session - [43/c4bd6b] Submitted process > FASTQC (4)
+Dec-15 11:04:50.878 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:04:50.882 [Task submitter] INFO  nextflow.Session - [41/10d872] Submitted process > FASTQC (3)
+Dec-15 11:04:50.886 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-15 11:04:50.887 [Task submitter] INFO  nextflow.Session - [cb/5e145e] Submitted process > FASTQC (2)
+Dec-15 11:05:02.693 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC (1); status: COMPLETED; exit: 0; error: -; workDir: /home/jfogrady1/test/work/6e/ab7d0e18a7d28cf1c1f1eed324c486]
+Dec-15 11:05:02.713 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=24; maxQueueSize=72; keepAlive=1m
+Dec-15 11:05:02.809 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: FASTQC (5); status: COMPLETED; exit: 0; error: -; workDir: /home/jfogrady1/test/work/14/0afedfa401729c3855f4f2d8acd613]
+Dec-15 11:05:02.908 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: FASTQC (3); status: COMPLETED; exit: 0; error: -; workDir: /home/jfogrady1/test/work/41/10d872aadfe98cf9554e80d5083af2]
+Dec-15 11:05:03.038 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FASTQC (2); status: COMPLETED; exit: 0; error: -; workDir: /home/jfogrady1/test/work/cb/5e145ea8a80346a6bb780102a28b59]
+Dec-15 11:05:03.623 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: FASTQC (6); status: COMPLETED; exit: 0; error: -; workDir: /home/jfogrady1/test/work/d9/5e451b6cb055a2af5c3691211e7366]
+Dec-15 11:05:03.942 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: FASTQC (4); status: COMPLETED; exit: 0; error: -; workDir: /home/jfogrady1/test/work/43/c4bd6b8d417340496f826620d93ecf]
+Dec-15 11:05:03.950 [main] DEBUG nextflow.Session - Session await > all process finished
+Dec-15 11:05:04.044 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-15 11:05:04.055 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 13s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
+Dec-15 11:05:04.237 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Dec-15 11:05:04.244 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

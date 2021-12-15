@@ -1,0 +1,2 @@
+2021-12-15 10:42:57	1.7s	gloomy_euler	OK	9a2dec3ff120cd5537a5980a2ac19d0e	e562f088-0f57-4d64-885d-ec902e4007d9	nextflow run ../../test.nf
+2021-12-15 10:44:53	1.5s	ridiculous_bernard	ERR	9d9cb12df7134a424f310da0ff7b05a7	b6e34d13-b4bc-4881-93cb-7c4516db9533	nextflow run ../../test.nf
